@@ -1,0 +1,25 @@
+public class power {
+    public static void main(String[] args) {
+        int base = 3;
+        int power = 6;
+
+        int ans = 1;
+        
+
+        while(power > 0){
+            if((power&1) == 1){
+                ans *= base;
+            }
+
+            base *= base;
+            power = power >> 1;
+        }
+
+        System.out.println(ans);
+    }
+}
+
+
+// it all are done for the time complexity 
+// its method time complexity is O(logn)
+// by direct time complexity is O(n)
