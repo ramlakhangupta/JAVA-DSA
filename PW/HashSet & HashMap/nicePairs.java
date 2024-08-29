@@ -38,7 +38,7 @@ public class nicePairs {
                 int frequency = map.get(def);
                
                 count += frequency;
-                count %= 1000000007
+                count %= 1000000007;
                 map.put(def, frequency + 1 );
             }
         }
