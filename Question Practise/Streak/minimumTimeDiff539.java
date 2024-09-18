@@ -1,41 +1,26 @@
 import java.util.*;
 public class minimumTimeDiff539 {
-    public static int findMinDifference(List<String> list) {
-        boolean mins[] = new boolean[1440];
-        for(String time : list){
-            int h = Integer.parseInt(time.substring(0,2));
-            int m = Integer.parseInt(time.substring(3,5));
-            int minutes = h*60 + m;
-            if(mins[minutes]) return 0;
-            mins[minutes] = true;
-        }
+    public int findMinDifference(List<String> t) {
+        ArrayList<Integer> arr = new ArrayList<Integer>(t.size());
 
-        int prev = -1;
-        int firstVal = -1;
-        int minDiff = Integer.MAX_VALUE;
-        for(int cur = 0; cur < 1440; cur++ ){
-            if(mins[cur]) {
-                if(prev == -1) {
-                    firstVal = cur;
-                    prev = cur;
-                } else {
-                    minDiff = Math.min(minDiff, cur-prev);
-                    prev = cur;
-                }
-            }
-        }
+       for (int i = 0; i < t.size(); i++) {
+            String str = t.get(i);
+            arr.add(i, (((str.charAt(0) - 48) * 10 + str.charAt(1) - 48) * 60) +
+            (str.charAt(3) - 48) * 10 + str.charAt(4) - 48);
+       }
+       Collections.sort(arr);
+       int help;
+       int temp = Integer.MAX_VALUE;
 
-        if(prev != -1){
-            minDiff = Math.min(minDiff, 1440+ firstVal- prev);
-        }
-        return minDiff;
-    }    public static void main(String[] args) {
-        ArrayList<String> list = new ArrayList<String>();
-      
-            list.add(0,"23:59");
-            list.add(1,"00:00");
+       help = arr.get(0) + 1440;
 
-        System.out.println(findMinDifference(list));
-        
-    }
+       for (int i = 1; i < arr.size(); i++) {
+           if (arr.get(i) > help / 2) {
+               temp = Math.min(temp, help - arr.get(i));
+           }
+           temp = Math.min(temp, arr.get(i) - arr.get(i - 1));
+       }
+       return temp;
+   }
+    
 }
