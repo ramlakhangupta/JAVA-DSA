@@ -1,0 +1,4 @@
+How to Build Logic for every pattern
+        1. see the pattern and count the row of pattern 
+        2. after look into the pattern and see what have to be printed
+        3. then find the no of and analysis the pattern
