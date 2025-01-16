@@ -25,6 +25,8 @@ public class LeapOfFaith {
         }
 
         return n*fac(n-1);
+
+        
     }
 
 
