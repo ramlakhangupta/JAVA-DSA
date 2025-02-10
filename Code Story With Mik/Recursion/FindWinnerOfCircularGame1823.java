@@ -5,7 +5,6 @@ import java.util.Queue;
 public class FindWinnerOfCircularGame1823 {
 //Approach 1: Brute Force (Simple Simulation)
 //T.C : O(n^2)
-//S.C : O(n)
     public int findTheWinner1(int n, int k) {
         ArrayList<Integer> arr = new ArrayList<>();
         for (int i = 1; i <= n; i++) {
