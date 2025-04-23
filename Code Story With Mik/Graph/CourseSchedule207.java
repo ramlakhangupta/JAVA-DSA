@@ -14,6 +14,8 @@ class Solution {
         return false;
     }
 
+    
+
     public boolean canFinish(int n, int[][] prerequisites) {
         HashMap<Integer, ArrayList<Integer>> map = new HashMap<>();
         for(int[] a : prerequisites) {
