@@ -3,7 +3,7 @@ class Solution {
 
     public void solve(String digits, HashMap<Character, String> map, int idx, StringBuilder curr) {
         if (idx >= digits.length()) {
-            result.add(curr.toString());
+            result.add(curr.toString() );
             return;
         }
 
