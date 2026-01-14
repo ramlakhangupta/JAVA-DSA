@@ -5,7 +5,7 @@ class Solution {
         if (idx >= digits.length()) {
             result.add(curr.toString() );
             return;
-        }
+        } 
 
         String str = map.get(digits.charAt(idx));
 
