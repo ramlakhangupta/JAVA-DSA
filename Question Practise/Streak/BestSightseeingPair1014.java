@@ -13,5 +13,7 @@ public class BestSightseeingPair1014 {
         }
 
         return maxScore;
+        
     }
+
 }
