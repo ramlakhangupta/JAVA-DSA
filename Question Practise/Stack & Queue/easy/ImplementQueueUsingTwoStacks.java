@@ -41,10 +41,9 @@ class MyQueue {
         public boolean isEmpty() {
             return first.isEmpty();
         }
-    
-    
   
 }
 
   
+
  
