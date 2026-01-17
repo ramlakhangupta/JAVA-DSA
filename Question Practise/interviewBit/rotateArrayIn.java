@@ -9,7 +9,6 @@ public class rotateArrayIn {
         for (int i = 0; i < n; i++) {
             ret.add(A.get((i + B) % n));
         }
-    
         return ret;
     }
 
@@ -25,5 +24,6 @@ public class rotateArrayIn {
     }
     
 }
+
 
 
