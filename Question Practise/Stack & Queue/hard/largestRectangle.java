@@ -16,6 +16,7 @@ public class largestRectangle {
                 maxRec = ans;
             } 
         }
+         
         return maxRec;
 
      }
@@ -53,3 +54,4 @@ public class largestRectangle {
         return ans;
      }
 }
+
