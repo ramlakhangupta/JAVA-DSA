@@ -7,6 +7,7 @@ class MyQueue {
         public MyQueue(){
             first = new Stack<>();
             second = new Stack<>();
+            
         }
 
         public void add(int item){
@@ -47,3 +48,4 @@ class MyQueue {
   
 
  
+
