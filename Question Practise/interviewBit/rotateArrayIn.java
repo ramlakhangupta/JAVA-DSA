@@ -10,6 +10,7 @@ public class rotateArrayIn {
             ret.add(A.get((i + B) % n));
         }
         return ret;
+        
     }
 
     public static void main(String[] args) {
@@ -24,6 +25,7 @@ public class rotateArrayIn {
     }
     
 }
+
 
 
 
