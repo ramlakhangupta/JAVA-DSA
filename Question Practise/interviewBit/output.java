@@ -23,7 +23,7 @@ public class output {
         int B = 1;
         rotateArray(A,B);
     }
-    
 }
+
 
 
