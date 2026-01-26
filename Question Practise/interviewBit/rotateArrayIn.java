@@ -22,8 +22,8 @@ public class rotateArrayIn {
         int B = 1;
         rotateArray(A,B);
     }
-    
 }
+
 
 
 
