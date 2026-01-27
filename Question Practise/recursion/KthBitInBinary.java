@@ -10,6 +10,6 @@ public class KthBitInBinary {
         if(k == mid) return '1';
         else if (k < mid ) return findKthBit(n-1, k);
                 else return findKthBit(n-1, l+1-k) == '0' ? '1' : '0';
-
     }
 }
+
