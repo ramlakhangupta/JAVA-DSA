@@ -1,3 +1,4 @@
+
 public class CycleList {
  class ListNode {
       int val;
@@ -22,4 +23,5 @@ public class Solution {
         return false;
     }
 }
+
 }
