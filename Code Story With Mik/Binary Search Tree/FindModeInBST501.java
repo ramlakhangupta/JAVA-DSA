@@ -18,7 +18,6 @@ class Solution {
                 maxIndex = freq + 1;
             }
         }
-
         solve(root.left);
         solve(root.right);
     }
