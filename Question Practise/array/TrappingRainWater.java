@@ -5,6 +5,7 @@ public static int trap(int[] arr) {
     int rightMax = 0;
     int result = 0;
 
+    
     while (left < right) {
         if (arr[left] < arr[right]) {
             if (arr[left] >= leftMax) {
