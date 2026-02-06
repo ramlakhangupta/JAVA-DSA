@@ -6,6 +6,7 @@ public class largestRectangle {
         System.out.println(rectangle(arr));
      }
 
+    
      public static int rectangle(int[] arr){
         int maxRec = 0 ;
 
@@ -54,4 +55,5 @@ public class largestRectangle {
         return ans;
      }
 }
+
 
