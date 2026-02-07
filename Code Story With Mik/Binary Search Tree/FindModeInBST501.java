@@ -4,6 +4,7 @@ class Solution {
     int maxIndex = 1;
 
     public void solve(TreeNode root) {
+        
         if (root == null) {
             return;
         }
