@@ -3,7 +3,6 @@ public class partitionarray {
         int[] nums = {9,12,5,10,14,3,10};
         System.out.println(pivotArray(nums,10));
     }
-
     public static  int[] pivotArray(int[] nums, int pivot) {
         int[] ans = new int[nums.length];
         int index = 0;
@@ -28,3 +27,4 @@ public class partitionarray {
    
 
 }
+
