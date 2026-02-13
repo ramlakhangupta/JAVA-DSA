@@ -1,5 +1,4 @@
 public class AddingSpacesToString2109 {
-
     public static String addSpaces(String s, int[] spaces) {
         int n = spaces.length;
         StringBuilder str = new StringBuilder();
@@ -19,5 +18,6 @@ public class AddingSpacesToString2109 {
         
     }
 }
+
 
 
