@@ -11,9 +11,9 @@ public class BestSightseeingPair1014 {
             // Update maxLeft for the next iteration
             maxLeft = Math.max(maxLeft, arr[j] + j);
         }
-
         return maxScore;
         
     }
 
 }
+
