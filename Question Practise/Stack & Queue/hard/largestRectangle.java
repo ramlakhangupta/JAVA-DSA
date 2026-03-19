@@ -36,6 +36,7 @@ public class largestRectangle {
             }
         
         }
+         
 
          //right check
         for (int i = index ; i <= arr.length; i++) {
