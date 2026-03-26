@@ -18,7 +18,8 @@ public int aggressiveCows(int[] stalls, int k) {
         
         return ans;
     }
-    
+
+
     public boolean isPossible(int[] stalls, int mid, int k) {
         int n = stalls.length;
         int val = stalls[0];
